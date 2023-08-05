@@ -1,40 +1,35 @@
 import React from "react";
 
 const Brand = () => {
-  const brandList = [
-    "axis.png",
-    "bob.png",
-    "hdfc.png",
-    "kotak.png",
-    "poonawala.png",
-    "subc.png",
-  ];
+    const brandList = [
+        "axis.png",
+        "bob.png",
+        "hdfc.png",
+        "kotak.png",
+        "poonawala.png",
+        "subc.png",
+    ];
 
-  return (
-    <>
-      {/* ====== Brands Section Start */}
-      <section className="bg-grey">
-        <div className="container  flex h-[30vh] justify-center items-center">
-          <div className="flex flex-wrap -mx-4">
-            <div className="w-full px-4">
-              <div className="flex flex-wrap items-center justify-center">
-                {brandList.map((brand) => (
-                  <div className="flex  items-center justify-center">
-                  <img
-                      src={brand}
-                      alt={brand}
-                      className="w-full h-16 mx-4 "
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* ====== Brands Section End */}
-    </>
-  );
+    return (
+        <>
+            {/* ====== Brands Section Start */}
+            <section className='pl-4 p-20 md:pl-20 bg-[#f0f4fc]'>
+                <div className='container flex justify-center items-center'>
+                    <div className='flex flex-wrap justify-center'>
+                        {brandList.map((brand, index) => (
+                            <img
+                                key={index}
+                                src={brand}
+                                alt={brand}
+                                className='h-12 md:h-24 w-[120px] md:w-[180px] mx-2 md:mx-4 object-contain filter grayscale hover:filter-none transition-all duration-300 hover:cursor-pointer'
+                            />
+                        ))}
+                    </div>
+                </div>
+            </section>
+            {/* ====== Brands Section End */}
+        </>
+    );
 };
 
 export default Brand;

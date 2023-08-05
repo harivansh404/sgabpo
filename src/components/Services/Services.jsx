@@ -42,28 +42,28 @@ content: "Delectus impedit saepe officiis ab aliquam repel.",
 
   return (
 
-    <section className="mb-0 text-neutral-700 m-4 md:m-10 shadow-[0_8px_90px_rgb(0,0,0,0.12)] rounded-2xl shadow-gray-500 bg-gradient-to-r from-green-400 to-blue-500 dark:text-neutral-300">
-      <div className="mx-auto text-center md:max-w-xl lg:max-w-3xl">
-        <h3 className="mb-0 text-3xl pt-10 font-bold">What We Offer</h3>
-        <p className="mb-6 pb-2 md:mb-12 md:pb-0">
+    <section className="mb-0  m-4 md:m-10  text-white">
+      <div className="mx-auto text-center  md:max-w-xl lg:max-w-3xl">
+        <h3 className="mb-0  md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-yellow-300 font-semibold leadi text-center w-[90%] md:w-[40rem] pt-10 ">What We Offer</h3>
+        <p className="mb-6 pb-2 md:mb-12 md:pb-0 text-xl  text-black">
           We use our business process experience to drive automation and reimagine newer ways of working
         </p>
       </div>
 
-      <motion.div className="grid gap-4 p-9 md:gap-6 xl:gap-8 text-center md:grid-cols-2 lg:grid-cols-3">
+      <motion.div className="grid  gap-4 p-9 md:gap-6 xl:gap-8 text-center md:grid-cols-2 lg:grid-cols-3">
         {testimonialsData.map((testimonial, index) => (
           <ScrollAnimation key={index} delay={index * 0.1}>
-            <div className="hover:mt-5 hover:shadow-slate-200 hover:bg-gradient-to-r from-green-400 to-blue-500 inline-block pt-4 rounded-lg mb-5 md:mb-20 w-full sm:w-[20rem] bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
-              <div className="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:bg-neutral-800">
+            <div className=" shadow-2xl  hover:shadow-gray-500 bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900 inline-block pt-4 rounded-lg mb-5 md:mb-20 w-full sm:w-[20rem] bg-white ">
+              <div className="mx-auto shadow-2xl -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white">
                 <img src={testimonial.imageUrl} alt={`Avatar of ${testimonial.name}`} />
               </div>
-              <div className="p-6">
+              <div className="p-6 text-black">
                 <h4 className="mb-4 text-2xl font-semibold">{testimonial.name}</h4>
                 <hr />
-                <p className="mt-4">
+                <p className="mt-4 text-white text-">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
+                    fill="cyan"
                     className="inline-block h-7 w-7 pr-2"
                     viewBox="0 0 24 24"
                   >
@@ -71,6 +71,7 @@ content: "Delectus impedit saepe officiis ab aliquam repel.",
                   </svg>
                   {testimonial.content}
                 </p>
+                <button className=" mt-5 text-cyan rounded-md p-1 bg-black text-cyan-300  ">Read More </button>
               </div>
             </div>
           </ScrollAnimation>
