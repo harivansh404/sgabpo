@@ -1,23 +1,19 @@
-import Services from '../Services/Services'
-import Testimonials from '../card/Testomonials'
-import ContectForm from '../contect/ContectForm'
-import Achievements from '../details/Achievements'
-import AchievementsCarousel from '../header/achievement/AchievementsCarousel'
-import HeroSection from '../header/herosection/HeroSection'
+import Services from "../Home/Services";
+import Testimonials from "../Testimonials/Testimonials";
+import ContactForm from "../Contact/ContactForm";
+import Hero from "../Home/Hero.jsx";
+import Stats from "../Stats/Stats";
 
 const HomePage = () => {
-  return (
-  <>
-      <HeroSection />
-      {/* <AchievementsCarousel /> */}
-      <Services/>
-      <Testimonials />
-      {/* <Blog1 /> */}
-      <Achievements />
-      <ContectForm />
-      
-  </>
-  )
-}
+    return (
+        <>
+            <Hero />
+            <Services />
+            <Testimonials />
+            <Stats />
+            <ContactForm />
+        </>
+    );
+};
 
-export default HomePage
+export default HomePage;

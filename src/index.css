@@ -3,17 +3,49 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: whitesmoke;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: whitesmoke;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    /* custom colors */
+
+    /* green-800 */
+    --primary-green: #166534;
+    /* green-500 */
+    --secondary-green: rgb(34 197 94 / 1);
+    /* green-700 */
+    --green7: rgb(21 128 61 / 1);
+
+    /* cyan-400 */
+    --cyan4: rgb(34 211 238 / 1);
+    /* yellow-300 */
+    --yellow3: rgb(253 224 71 / 1);
+}
+
+::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background: linear-gradient(
+        var(--primary-green),
+        var(--secondary-green),
+        var(--green7)
+    );
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(45, 203, 206, 0.8)); */
 }
