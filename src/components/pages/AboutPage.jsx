@@ -30,7 +30,7 @@ const AboutPage = () => {
                             variants={slideInVariants}
                             transition={{ duration: 0.6, ease: "easeInOut" }}
                         >
-                            <div className='relative z-1   block hover:shadow-2xl rounded-lg bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900 px-6 py-12 md:px-12 lg:-mr-14 backdrop-blur-[30px]'>
+                            <div className='relative z-1   block hover:shadow-2xl rounded-lg bg-gradient-to-bl from-green-800 via-green-500 to-green-800 hover:bg-gradient-to-br hover:from-green-800 hover:via-green-500 hover:to-green-800 px-6 py-12 md:px-12 lg:-mr-14 backdrop-blur-[30px]'>
                                 <h2 className='mb-6 text-2xl md:text-4xl  uppercase font-bold'>
                                     WHERE YOU SEE CHALLENGES, WE SHOW YOU
                                     OPPORTUNITIES

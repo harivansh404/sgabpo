@@ -1,30 +1,24 @@
-const TestimonialCard = ({ imageUrl, title, description }) => {
+import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
+
+const TestimonialCard = ({ testimonial }) => {
     return (
-        <div className='mb-6 overflow-hidden rounded-lg bg-white'>
+        <div className='flex flex-col items-center justify-center h-full  bg-white  p-6 rounded-lg shadow-md max-w-3xl mx-auto'>
             <img
-                src={imageUrl}
-                alt='image'
-                className='w-full h-64 object-scale-down'
+                src={testimonial.imageUrl}
+                alt=''
+                className='w-20 border-2 border-secondary-green rounded-full aspect-square object-cover'
             />
-            <div className='p-6 text-center sm:p-2 md:p-2 xl:p-2'>
-                <h3>
-                    <a
-                        href='javascript:void(0)'
-                        className='text-black hover:text-primary mb-3 block text-xl font-semibold sm:text-lg md:text-xl lg:text-lg xl:text-xl 2xl:text-lg'
-                    >
-                        {title}
-                    </a>
-                </h3>
-                <p className='text-black mb-4 text-base leading-relaxed'>
-                    {description}
-                </p>
-                <a
-                    href='javascript:void(0)'
-                    className='text-black hover:border-primary hover:bg-primary inline-block rounded-full border border-[#E5E7EB] py-2 px-6 text-base font-medium transition hover:text-gray-500'
-                >
-                    View Details
-                </a>
-            </div>
+            <p className='text-gray-600 m-4 flex'>
+                <BiSolidQuoteAltLeft className="text-secondary-green" size={34} />
+                {testimonial.testimonial}
+                <BiSolidQuoteAltRight className="text-secondary-green" size={34} />
+            </p>
+            <p className='text-blue-500 font-semibold mt-6'>
+                {testimonial.name}
+            </p>
+            <p className='text-black'>
+                {testimonial.position} ({testimonial.company})
+            </p>
         </div>
     );
 };

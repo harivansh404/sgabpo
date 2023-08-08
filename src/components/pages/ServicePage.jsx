@@ -29,7 +29,7 @@ const ServicePage = () => {
                             variants={slideInVariants}
                             transition={{ duration: 0.6, ease: "easeInOut" }}
                         >
-                            <div className='m= md:mt-10  sm:mt-16  lg:mx-10 sm:mx-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-900 via-indigo-400 to-indigo-900 rounded-lg hover:shadow-2xl bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:px-12 lg:-mr-14 backdrop-blur-[30px]'>
+                            <div className='m= md:mt-10  sm:mt-16  lg:mx-10 sm:mx-10 bg-gradient-to-bl from-green-800 via-green-500 to-green-800 hover:bg-gradient-to-br hover:from-green-800 hover:via-green-500 hover:to-green-800 rounded-lg hover:shadow-2xl bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:px-12 lg:-mr-14 backdrop-blur-[30px]'>
                                 <h2 className='mb-6 text-4xl font-bold'>
                                     INDUSTRY-FOCUSED SERVICES CUSTOMIZED FOR
                                     YOUR UNIQUE BUSINESS SCALE AND NEEDS

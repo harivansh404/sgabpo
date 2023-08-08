@@ -1,12 +1,14 @@
+import {
+    axis,
+    bob,
+    hdfc,
+    kotak,
+    poonawala,
+    subc,
+} from "../../assets/brands/brandsIcons";
+
 const Brands = () => {
-    const brandList = [
-        "axis.png",
-        "bob.png",
-        "hdfc.png",
-        "kotak.png",
-        "poonawala.png",
-        "subc.png",
-    ];
+    const brandList = [axis, bob, hdfc, kotak, poonawala, subc];
 
     return (
         <>

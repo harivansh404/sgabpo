@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 const Hero = () => {
     return (
         <section className='flex bg-white text-black md:h-[100vh]'>
-            <div className='grid max-w-screen-xl mb-10 mx-4 md:mx-8 lg:mx-12 px-4 py-8 md:gap-8 xl:gap-0 md:py-16 lg:grid-cols-12'>
+            <div className='grid  max-w-screen-xl mb-10 mx-4 md:mx-8 lg:mx-12 px-4 py-8 md:gap-8 xl:gap-0 md:py-16 lg:grid-cols-12'>
                 <motion.div
                     className='lg:col-span-7 md:my-12 lg:my-0'
                     initial={{ opacity: 0, y: 20 }}
@@ -12,7 +12,7 @@ const Hero = () => {
                     transition={{ delay: 0.2 }}
                 >
                     <motion.p
-                        className='text-base md:text-lg lg:text-xl text-gray-500 lg:mb-8'
+                        className='text-base md:text-lg mt-163 lg:text-xl text-gray-500 lg:mb-8'
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.6 }}
@@ -72,7 +72,7 @@ const Hero = () => {
                     </div>
                 </motion.div>
                 <motion.div
-                    className='lg:col-span-5 lg:mb-0 lg:flex lg:items-center'
+                    className='lg:col-span-5  lg:mb-0 lg:flex lg:items-center'
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 1 }}
@@ -80,7 +80,7 @@ const Hero = () => {
                     <motion.img
                         src='/business.png'
                         alt='mockup'
-                        className='w-full h-auto'
+                        className='w-[60rem] rounded-[40%] h-auto'
                         style={{ height: "auto", maxWidth: "100%" }} // Adjust the image size for mobile view
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}

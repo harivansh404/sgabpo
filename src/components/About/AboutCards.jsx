@@ -7,7 +7,7 @@ const AboutCards = () => {
                 <div className='container mx-auto'>
                     <div className='flex flex-wrap   items-center'>
                         <div className='w-10/12 md:w-10/12  lg:w-[30rem]  px-4 md:px-8 ml-auto mr-auto  md:-mt-12'>
-                            <div className='relative shadow-2xl hover:shadow-cyan-200 shadow-zinc-800 bg-gradient-to-r from-gray-700 via-gray-900 to-black flex flex-col min-w-0 break-words  w-full mb-6  rounded-2xl '>
+                            <div className='relative shadow-2xl hover:shadow-xl hover:shadow-zinc-500 bg-gradient-to-r from-gray-700 via-gray-900 to-black flex flex-col min-w-0 break-words  w-full mb-6  rounded-2xl '>
                                 <img
                                     alt='...'
                                     src='https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80'
@@ -39,9 +39,9 @@ const AboutCards = () => {
                                         key={index}
                                         className='w-full md:w-6/12 px-4'
                                     >
-                                        <div className='relative  hover:shadow-cyan-400 shadow-slate-800 bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900 rounded-2xl shadow-2xl flex flex-col mt-4'>
+                                        <div className='relative    hover:shadow-2xl  bg-gradient-to-bl from-green-800 via-green-500 to-green-800 hover:bg-gradient-to-br hover:from-green-800 hover:via-green-500 hover:to-green-800  rounded-2xl shadow-2xl flex flex-col mt-4'>
                                             <div className='px-4 py-5 flex-auto'>
-                                                <div className='text-blueGray-500 p-3  bg-gradient-to-r from-gray-700 via-gray-900 to-black text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg shadow-slate-800 rounded-full '>
+                                                <div className='text-blueGray-500 p-3  bg-gradient-to-r from-gray-700 via-gray-900 to-black text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-md shadow-slate-800 rounded-full '>
                                                     <section.icon
                                                         size={24}
                                                         color='cyan'

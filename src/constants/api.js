@@ -49,20 +49,34 @@ export const servicesData = [
 export const testimonialData = [
     {
         imageUrl: "Services1.png",
-        title: "50+ Best creative website themes & templates",
-        description:
+        name: "John Doe",
+        position: "Owner",
+        company: "XYZ company",
+        testimonial:
             "Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.",
     },
     {
-        imageUrl: "Services2.png",
-        title: "The ultimate UX and UI guide to card design",
-        description:
+        imageUrl: "Services1.png",
+        name: "Shashank Trivedi",
+        position: "CEO",
+        company: "HIFI Company",
+        testimonial:
             "Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.",
     },
     {
-        imageUrl: "Services3.png",
-        title: "Creative Card Component designs graphic elements",
-        description:
+        imageUrl: "Services1.png",
+        name: "Elon Musk",
+        position: "Owner",
+        company: "Tesla",
+        testimonial:
+            "Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.",
+    },
+    {
+        imageUrl: "Services1.png",
+        name: "Ratan Tata",
+        position: "Owner",
+        company: "Tata ",
+        testimonial:
             "Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.",
     },
 ];
@@ -87,6 +101,11 @@ export const statData = [
         id: 4,
         year: 70,
         description: "COMMUNITY<br />POSTS",
+    },
+    {
+        id: 5,
+        year: 4,
+        description: "BANKS IN<br />PORTFOLIO",
     },
 ];
 

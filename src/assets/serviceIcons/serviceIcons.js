@@ -5,3 +5,4 @@ import custIcon from "./customer_icon.png";
 import trainingIcon from "./training_icon.png";
 
 export { debtIcon, businessIcon, itIcon, custIcon, trainingIcon };
+
