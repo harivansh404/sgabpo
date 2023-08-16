@@ -1,0 +1,12 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(
+        rgb(194, 254, 218),
+        rgb(191, 215, 249),
+        rgb(194, 254, 218)
+    );
+    background-repeat: repeat-y;
+}
